@@ -5,6 +5,7 @@ import {
   ActionIconsContainerMobile,
   MyList,
 } from "../../styles/appbar";
+import { Colors } from "../../styles/theme";
 
 export default function Actions({ matches }) {
   const Component = matches
@@ -22,6 +23,7 @@ export default function Actions({ matches }) {
             sx={{
               display: "flex",
               justifyContent: "center",
+              color: matches && Colors.secondary,
             }}
           >
             <ShoppingCart />
@@ -37,6 +39,7 @@ export default function Actions({ matches }) {
             sx={{
               display: "flex",
               justifyContent: "center",
+              color: matches && Colors.secondary,
             }}
           >
             <Favorite />
@@ -52,6 +55,7 @@ export default function Actions({ matches }) {
             sx={{
               display: "flex",
               justifyContent: "center",
+              color: matches && Colors.secondary,
             }}
           >
             <Person />

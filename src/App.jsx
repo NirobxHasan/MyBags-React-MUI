@@ -1,8 +1,9 @@
-import { Button, Container, ThemeProvider } from "@mui/material";
+import { Box, Container, ThemeProvider, Typography } from "@mui/material";
 // import { ThemeProvider } from "@mui/system";
 import { useEffect } from "react";
 import Appbar from "./components/appbar";
 import Banner from "./components/banner";
+import Products from "./components/products";
 import Promotions from "./components/promotions";
 import theme from "./styles/theme";
 
@@ -17,7 +18,10 @@ function App() {
         <Appbar />
         <Banner />
         <Promotions />
-        <Button variant="contained">Hello</Button>
+        <Box display="flex" justifyContent="center" sx={{ p: 4 }}>
+          <Typography variant="h4">Our Products</Typography>
+        </Box>
+        <Products />
       </Container>
     </ThemeProvider>
   );
